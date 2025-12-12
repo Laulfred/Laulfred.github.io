@@ -4,10 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/my-portfolio/',
-  build: {
-    outDir: 'docs', // Build to docs folder instead of dist
-  },
+  base: '/', // IMPORTANT: Replace with YOUR repo name
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
