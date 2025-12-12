@@ -4,15 +4,11 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Change from '/' to './'
+  base: '',
   build: {
     outDir: 'dist',
-    assetsDir: 'assets',
-    rollupOptions: {
-      output: {
-        manualChunks: undefined,
-      },
-    },
+    emptyOutDir: true,
+    sourcemap: false,
   },
   resolve: {
     alias: {
